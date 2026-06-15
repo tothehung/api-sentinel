@@ -1,4 +1,4 @@
-module github.com/yourusername/api-sentinel
+module github.com/tothehung/api-sentinel
 
 go 1.25.0
 
