@@ -1,0 +1,51 @@
+openapi: 3.0.3
+info:
+  title: API Sentinel Test API
+  version: 0.1.0
+security:
+  - bearerAuth: []
+paths:
+  /pets/{petId}:
+    parameters:
+      - name: petId
+        in: path
+        required: true
+        schema:
+          type: integer
+    get:
+      operationId: getPet
+      summary: Get a pet
+      parameters:
+        - name: includeDetails
+          in: query
+          required: true
+          schema:
+            type: boolean
+      responses:
+        "200":
+          description: OK
+  /admin/users:
+    post:
+      operationId: createUser
+      security:
+        - apiKeyAuth: []
+      responses:
+        "201":
+          description: Created
+  /health:
+    get:
+      operationId: health
+      security: []
+      responses:
+        "200":
+          description: OK
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+    apiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key

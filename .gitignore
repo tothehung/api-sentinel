@@ -1,0 +1,13 @@
+@"
+# Go
+bin/
+dist/
+*.exe
+*.test
+coverage.out
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+"@ | Set-Content .gitignore
