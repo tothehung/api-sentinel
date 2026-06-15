@@ -7,10 +7,10 @@ import (
 	"os"
 	"time"
 
-	"github.com/yourusername/api-sentinel/internal/attack"
-	"github.com/yourusername/api-sentinel/internal/httpclient"
-	"github.com/yourusername/api-sentinel/internal/runner"
-	"github.com/yourusername/api-sentinel/internal/spec"
+	"github.com/tothehung/api-sentinel/internal/attack"
+	"github.com/tothehung/api-sentinel/internal/httpclient"
+	"github.com/tothehung/api-sentinel/internal/runner"
+	"github.com/tothehung/api-sentinel/internal/spec"
 )
 
 const version = "0.1.0-dev"

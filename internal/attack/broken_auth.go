@@ -7,8 +7,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/yourusername/api-sentinel/internal/httpclient"
-	"github.com/yourusername/api-sentinel/internal/spec"
+	"github.com/tothehung/api-sentinel/internal/httpclient"
+	"github.com/tothehung/api-sentinel/internal/spec"
 )
 
 const BrokenAuthenticationID = "OWASP-API2-BROKEN-AUTHENTICATION"
