@@ -133,7 +133,7 @@ func mergeParameters(pathParams, operationParams []Parameter) []Parameter {
 }
 
 func schemaType(ref *openapi3.SchemaRef) string {
-	if ref == nil || ref.Value == nil || ref.Value.Type == nil || ref.Value.Type.IsEmpty() {
+	if ref == nil || ref.Value == nil || ref.Value.Type == nil {
 		return ""
 	}
 
